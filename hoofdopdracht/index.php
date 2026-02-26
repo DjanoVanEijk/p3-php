@@ -18,7 +18,7 @@ $Jaar = "Doe je huiswerk of ga good";
     </header>
 
     <main>
-        <h1>Hoi, welkom bij <?= $appNaam ?></h1>
+        <h1><span id="greeting">Hoi</span>, welkom bij <?= $appNaam ?></h1>
     </main>
 
     <footer>
@@ -26,3 +26,4 @@ $Jaar = "Doe je huiswerk of ga good";
     </footer>
 </body>
 </html>
+<script src="app.js"></script>
