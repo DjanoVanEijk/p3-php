@@ -1,0 +1,1 @@
+<button><a href="pages/home.php">Home</a></button> <button><a href="pages/toevoegen.php">Toevoegen</a></button>

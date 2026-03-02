@@ -1,4 +1,4 @@
-let hour = new Date().getHours();
+const hour = new Date().getHours();
 
 if (hour < 12) {
     document.getElementById("greeting").textContent= "Goedemorgen";
