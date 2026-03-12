@@ -1,1 +1,7 @@
-<button><a href="pages/home.php">Home</a></button> <button><a href="pages/toevoegen.php">Toevoegen</a></button>
+
+<nav>
+    <ul>
+        <li><a href="pages/home.php">Home</a></li>
+        <li><a href="pages/toevoegen.php">Toevoegen</a></li>
+    </ul>
+</nav>

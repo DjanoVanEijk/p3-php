@@ -7,5 +7,3 @@
 </head>
 <body>
   <h1>Welkom bij mijn app</h1>  
-</body>
-</html>

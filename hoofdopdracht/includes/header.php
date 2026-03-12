@@ -1,7 +1,7 @@
 <?php
 $appNaam = "Kanvas";
 $trackerType = "Huiswerk";
-$Jaar = "Doe je huiswerk of ga good";
+$idk = "Doe je huiswerk of ga dood";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,6 @@ $Jaar = "Doe je huiswerk of ga good";
     <title>Document</title>
 </head>
 <header>
-        <h2><?= $appNaam ?></h2>
+        <h1><?= $appNaam ?></h1>
     </header>
 <body>
