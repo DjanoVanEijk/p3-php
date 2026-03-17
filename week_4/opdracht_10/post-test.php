@@ -10,8 +10,10 @@
     <input name="title" type="text">
     <button type="submit">Submit</button>
     </form>
-    <?php
+  <?php
+if (isset($_POST['title'])) {
     echo htmlspecialchars($_POST['title']);
+}
 ?>
 </body>
 </html>
