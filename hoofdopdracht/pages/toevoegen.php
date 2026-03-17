@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    test2
+    <form method="POST">
+    <input name="vak" type="text" required>
+    <input name="deadline" type="date" required>
+    <button type="submit">Submit</button>
+    </form>
+<p>
+  <?php
+if (isset($_POST['vak'])) {
+    echo htmlspecialchars($_POST['vak']);
+}
+?>
+</p>
+
+<p>
+<?php
+if (isset($_POST['deadline'])) {
+    echo htmlspecialchars($_POST['deadline']);
+}
+?>
+</p>
 </body>
 </html>
