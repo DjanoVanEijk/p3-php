@@ -11,7 +11,9 @@
     <button type="submit">Submit</button>
     </form>
     <?php
-    echo $_GET['title'];
+    if (isset($_GET['title'])) {
+    echo htmlspecialchars($_GET['title']);
+}
 ?>
 </body>
 </html>
