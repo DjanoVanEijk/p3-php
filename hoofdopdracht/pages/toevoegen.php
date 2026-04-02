@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 
-<?php if (!empty($errors)): ?>
+<?php if (empty($errors)): ?>
     <div>
         <ul>
             <?php foreach ($errors as $error): ?>
