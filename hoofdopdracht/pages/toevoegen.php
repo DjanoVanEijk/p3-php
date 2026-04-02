@@ -1,3 +1,5 @@
+<?php require "../includes/db.php"; ?>
+
 <?php
 $errors = [];
 $success = "";
@@ -63,17 +65,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </form>
 <p>
   <?php
-if (isset($_POST['vak'])) {
-    echo htmlspecialchars($_POST['vak']);
+if (isset($_POST['vak'], $_POST['deadline'])) {
+    $vak = $_POST['vak'];
+    $deadline = $_POST['deadline'];
+    $sql = "INSERT INTO huiswerk (vak, deadline) VALUES (:vak, :deadline)";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['vak' => $vak, 'deadline' => $deadline]);
+    header("Refresh:0");
 }
 ?>
 </p>
 
 <p>
 <?php
-if (isset($_POST['deadline'])) {
-    echo htmlspecialchars($_POST['deadline']);
-}
+
 ?>
 </p>
 </body>
