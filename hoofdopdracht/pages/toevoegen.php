@@ -1,4 +1,6 @@
-<?php require "../includes/db.php"; ?>
+<?php require "../includes/db.php"; 
+session_start();
+?>
 
 <?php
 $errors = [];
@@ -71,7 +73,9 @@ if (isset($_POST['vak'], $_POST['deadline'])) {
     $sql = "INSERT INTO huiswerk (vak, deadline) VALUES (:vak, :deadline)";
     $stmt = $conn->prepare($sql);
     $stmt->execute(['vak' => $vak, 'deadline' => $deadline]);
-    header("Refresh:0");
+    $_SESSION['success'] = "Opslaan gelukt!";
+    header("location: home.php");
+    exit();
 }
 ?>
 </p>
