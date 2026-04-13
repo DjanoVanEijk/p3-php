@@ -5,7 +5,7 @@
 
     <main>
         <div class="container">
-        <h1><span id="greeting">Hoi</span>, welkom bij <?= $appNaam ?></h1>
+        <h2><span id="greeting">Hoi</span>, welkom bij <?= $appNaam ?></h2>
         <p>Hier kun je al je huiswerk bijhouden en beheren.</p>
         <?php require "includes/nav.php"; ?>
     </main>
