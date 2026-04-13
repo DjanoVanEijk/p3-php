@@ -4,20 +4,9 @@
     <?php require "includes/db.php"; ?>
 
     <main>
+        <div class="container">
         <h1><span id="greeting">Hoi</span>, welkom bij <?= $appNaam ?></h1>
-
-        <?php
-        $huiswerk = $conn->prepare("SELECT * FROM huiswerk");
-        $huiswerk->execute();
-        $doosje_met_huiswerk = $huiswerk->fetchAll(PDO::FETCH_ASSOC);
-
-        echo "<ul>";
-        foreach ($doosje_met_huiswerk as $huiswerkdeel){
-        echo "<li>" . $huiswerkdeel['vak'] . "</li>";
-        }
-        echo "</ul>";
-        ?>
+        <p>Hier kun je al je huiswerk bijhouden en beheren.</p>
+        <?php require "includes/nav.php"; ?>
     </main>
-    <?php require "includes/nav.php"; ?>
-    <br><br>
     <?php require "includes/footer.php"; ?>
